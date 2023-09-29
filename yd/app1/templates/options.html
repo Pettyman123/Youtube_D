@@ -1,0 +1,19 @@
+{% block content %}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Youtube video downloader</h1>
+<h2>Options</h2>
+
+
+{% csrf_token %}
+
+    {% for op in options %}
+        <button type="submit">{{ op }}Download!</button>
+        
+    {% endfor %}
+
+</body>
+</html>
+{% endblock %}

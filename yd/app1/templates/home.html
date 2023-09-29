@@ -1,0 +1,22 @@
+{% block content %} {% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube video downloader</title>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+  </head>
+  <body>
+    <h1>Youtube video downloader</h1>
+
+    {% csrf_token %}
+    <div>
+      <label for="link">Enter URL:</label>
+      <input id="inp" type="text" name="link" /><br /><br />
+      <button onclick="get_resolution()">Submit</button>
+    </div>
+
+    <div id="options"></div>
+  </body>
+</html>
+{% endblock %}
