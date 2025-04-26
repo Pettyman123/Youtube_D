@@ -4,3 +4,4 @@ im losing my mind
 lost af
 dead inside
 cried a shit load yesterday
+s 
